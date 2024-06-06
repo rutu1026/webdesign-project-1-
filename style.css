@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* --------------------------- */
+
+
+nav{
+    height: 9vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2.5%;
+    gap: 2%;
+}
+
+nav h4{
+    font-weight: 700;
+}
+
+nav i{
+    background-color: black;
+    color: white;
+    padding: 0.5%;
+    border-radius: 50%;
+}
+/* -------------------------- */
+
+.left-text{
+    /* background-color: antiquewhite; */
+    padding: 2.5% 3%;
+    margin-left:4vw;
+}
+
+.left-text h1{
+    font-size: 300%;
+    font-weight: 540;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 9vh;
+}
+/* --------------------------- */
+
+.text{
+    /* background-color: skyblue; */
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: rgb(91, 83, 83);
+    line-height: 1.8vw;
+    font-size: 10px;
+    font-size: 1.17vw;
+}
+
+/* ------------------------------- */
+
+.right-links{
+    position: absolute;
+    /* background-color: antiquewhite; */
+    width: 22%;
+    right: 0;
+    top: 45%;
+    padding-right: 3%;   
+}
+
+.link{
+    font-size: 1.5vw;
+    font-weight: 546;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6% 0%;
+    border-top: 1.5px solid black;
+}
+
+.link i{
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.link a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.link:hover i{
+    opacity: 1;
+}
+
+/* ------------------------------ */
+
+.bottom-img{
+    height: 28vh;
+    width: 100%;
+    background-color: red;
+    background-image: url(https://images.unsplash.com/photo-1508418717103-8b56bcf03360?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0 25%;
+}
+
+/* -------------- media ---------------------*/
+
+@media (max-width:600px) {
+    nav{
+        height: 60px;
+        gap: 23px;
+        padding: 0 20px;
+    }
+    nav h4{
+        font-size: 12px;
+        font-weight: 600;
+        
+        /* display: none; */
+    }
+    nav i{
+        background-color: black;
+        color: white;
+        font-size: 11px;
+        padding: 7px;
+        font-weight: 500;
+        border-radius: 50%;
+    }
+    .left-text{
+        width: 100%;
+        /* background-color: red; */
+        padding: 15px 20px;
+    }
+    .left-text h1{
+        /* font-size: 78px; */
+        font-size: 10vw;
+        font-weight: 500;
+        line-height: 9vw;
+    }
+
+    .text{
+        /* background-color: red; */
+        width: 100%;
+        margin-top: 22px;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    .text p{
+        /* font-size: 22px; */
+        font-size: 2.5vw;
+        font-weight: 600;
+        line-height: 3.5vw;
+    }
+    .right-links{
+        margin-top: 6vh;
+        /* margin-right: 2vw; */
+        width: 35%;
+        justify-content: space-between;
+    }
+    .link{
+        /* background-color:yellow; */
+        /* margin: 5px; */
+        padding: 10px 5px;
+        border-top: 1.5px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .link i{
+        font-size: 12px;
+        font-weight: 500;
+        opacity: 1;
+        color: #303030;
+    }
+    .link a{
+        color: #303030;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .bottom-img{
+        margin-top: 13vh;
+        height: 30vh;
+        width: 100%;
+        background-image: url(https://images.unsplash.com/photo-1508418717103-8b56bcf03360?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-position: 0 25%;
+    }
+    
+}
